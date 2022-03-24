@@ -1,0 +1,48 @@
+Mini Projet Gestion de contacts
+	Fonctionnalites:
+		Lister les contacts
+		ID Nom, Prenom, Adresse, Email, Telepehone, Description (TEXTAREA)
+		Ajouter un contact 
+		Modifier un contact
+		Supprimer un contact 
+		Afficher la page de detail d'un contact 
+
+	Front-End: Angular
+	
+	BACK-END: API REST (WEB Service) : Ressources 
+		GET contacts https://localhost:8080/contacts
+		GET contacts https://localhost:8080/contacts/{idContact}	 
+		DELETE contacts https://localhost:8080/contacts
+		POST contacts https://localhost:8080/contacts
+			BODY 
+			{
+				"nom": "DIAW",
+				"prenom": "AMADOU",
+				"adresse": "1269 rue NGalandou DIOUF",
+				"email": "test@test.fr",
+				"telephone": "+222 787 55 21",
+				"description": "Je suis un ingenieur en Informatique avec plus de 4 ans d'exprience",
+			}
+	
+		PUT contacts https://localhost:8080/contacts/{idContact}
+			BODY 
+			{
+				"nom": "DIAW",
+				"prenom": "AMADOU",
+				"adresse": "1269 rue NGalandou DIOUF",
+				"email": "test@test.fr",
+				"telephone": "+222 787 55 21",
+				"description": "Je suis un ingenieur en Informatique avec plus de 4 ans d'exprience",
+			}
+			
+		Utiliser POSTMAN pour tester votre API
+		Utiliser un framework au choix pour mettre en place l'API 
+			PHP: Laravel
+			PYTHON: DJANGO
+			JAVA: SPRING REST 
+			
+	BASE DE DONNEES 
+	   MYSQL 
+	   table contact (id,nom,prenom,adresse,email,telephone,description)
+			
+			
